@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, RootActivity!</string>
+    <string name="app_name">MyProdWeb</string>
+    <string name="selectlose">你需要挂失的是:</string>
+    <string name="selectreturn">你需要归还的是:</string>
+    <string name="help">帮助</string>
+	<string name="about">关于</string>
+    <string name="information">      凡丢失图书的读者，在挂失成功后请速与图书管理员联系，解决图书遗失事宜！</string>
+</resources>

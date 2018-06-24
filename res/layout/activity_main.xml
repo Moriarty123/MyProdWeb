@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回Home界面" />
+
+    <Button
+        android:id="@+id/urlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览网址" />
+
+    <Button
+        android:id="@+id/sendSmsBtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送短信" />
+
+    <Button
+        android:id="@+id/dialViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示打电话界面" />
+
+    <Button
+        android:id="@+id/dialBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直接拨打电话" />
+
+    <Button
+        android:id="@+id/openCameraBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开照相机" />
+
+    <Button
+        android:id="@+id/ProdActivityBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商品库存管理" />
+
+    <Button
+        android:id="@+id/btnBackATTEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备份手机联系人" />
+
+    <Button
+        android:id="@+id/btnBackSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备份手机短信" />
+
+</LinearLayout>
