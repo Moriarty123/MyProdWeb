@@ -35,8 +35,12 @@ public class DisplayActivity extends Activity {
 		tv_password.setText("密码："+password);
 		tv_birthday.setText("生日："+birthday);
 		tv_sex.setText("性别："+sex);
-		//if(sex=="男") sex="male";
-		//else sex="female";
+		
+        if(sex.equals("男") ) 
+        	sex="M";
+		else 
+			sex="F";
+        
 		OK_btn.setOnClickListener(new OnClickListener(){
  
 			@Override
@@ -62,7 +66,23 @@ public class DisplayActivity extends Activity {
 									).show();
 								}
 							});
-						} else {// 请求失败 使用UI线程弹出toast
+						} 
+						else if((result != null)&&result.equals("2")) {
+							runOnUiThread(new Runnable() {
+								@Override
+								public void run() {
+									//Toast.makeText(LoginActivity.this, result, 0).show();
+									Toast.makeText
+									(
+											DisplayActivity.this,
+											"换一个号码注册", 
+											Toast.LENGTH_SHORT
+									).show();
+								}
+							});
+						}
+						
+						else {// 请求失败 使用UI线程弹出toast
 							runOnUiThread(new Runnable() {
 								@Override
 								public void run() {

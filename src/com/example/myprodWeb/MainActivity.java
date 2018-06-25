@@ -19,6 +19,9 @@ public class MainActivity extends Activity {
 	Button openCameraBtn;
 	Button prodActivityBtn;
 	
+	//新添加
+	Button backAttenBtn;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,6 +38,9 @@ public class MainActivity extends Activity {
     	dialBtn=(Button)findViewById(R.id.dialBtn);
     	openCameraBtn=(Button)findViewById(R.id.openCameraBtn);
     	prodActivityBtn=(Button)findViewById(R.id.ProdActivityBtn);
+    	
+    	//新添加
+    	backAttenBtn = (Button)findViewById(R.id.btnBackATTEN);
     }
     void setListeners()
     {
@@ -112,6 +118,18 @@ public class MainActivity extends Activity {
     		public void onClick(View v){
     			Intent intent=new Intent();
     			intent.setClassName(MainActivity.this,"com.example.myprodWeb.ProdispActivity");
+    			startActivity(intent);
+    		}
+    		
+    	}
+    	);
+    	
+    	//新添加
+    	backAttenBtn.setOnClickListener(new OnClickListener(){
+    		@Override 
+    		public void onClick(View v){
+    			Intent intent=new Intent();
+    			intent.setClassName(MainActivity.this,"com.example.myprodWeb.MyContactActivity");
     			startActivity(intent);
     		}
     		
