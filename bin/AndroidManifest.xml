@@ -19,6 +19,7 @@
         <activity android:name="com.example.myprodWeb.CameraActivity"></activity>
         
         <activity android:name="com.example.myprodWeb.MyContactActivity"></activity>
+        <activity android:name="com.example.myprodWeb.GetBackActivity"></activity>
 
     </application>
     <uses-sdk android:minSdkVersion="7" />

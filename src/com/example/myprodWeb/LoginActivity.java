@@ -24,6 +24,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 	private EditText etNumber;
 	private EditText etPassword;
 //	private CheckBox cbRemember;
+	
+	//ÐÂÌí¼Ó
+	private Button btn_getBack;
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
@@ -44,8 +48,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 	private void initView() {
 		etNumber = (EditText) findViewById(R.id.et_number);
 		etPassword = (EditText) findViewById(R.id.et_password);
+		
 		Button btn_register=(Button)findViewById(R.id.btn_register);
 //		cbRemember = (CheckBox) findViewById(R.id.cb_remember);
+		
 		findViewById(R.id.btn_login).setOnClickListener(this);
 		btn_register.setOnClickListener(new OnClickListener(){
 			@Override
@@ -54,6 +60,20 @@ public class LoginActivity extends Activity implements OnClickListener {
 				Intent intent=new Intent();
 				
 				intent.setClassName(LoginActivity.this,"com.example.myprodWeb.RegisterActivity");
+				
+				startActivity(intent);
+			}
+
+		});
+		
+		btn_getBack = (Button)findViewById(R.id.Getbackbtn);
+		btn_getBack.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent();
+				
+				intent.setClassName(LoginActivity.this,"com.example.myprodWeb.GetBackActivity");
 				
 				startActivity(intent);
 			}

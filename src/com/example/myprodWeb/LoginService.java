@@ -36,6 +36,7 @@ public class LoginService {
 			if (code == 200) {                    // «Î«Û≥…π¶
 				InputStream is = conn.getInputStream();  
 				String text = StreamTools.readInputStream(is); 
+				
 				return text;
 			} else {
 				return null;
